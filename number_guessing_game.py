@@ -21,8 +21,10 @@ def func():
     elif(value<secretnum):
         # print("Go Higher!!!\n")
         messagebox.showinfo(title=NONE,message='GO HIGHER!!!')
+        enterNumField.delete(0,END)
     elif(value>secretnum):
         messagebox.showinfo(title=NONE,message="Go Lower!!!")
+        enterNumField.delete(0,END)
 
 
 def start():
