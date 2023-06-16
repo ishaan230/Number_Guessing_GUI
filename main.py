@@ -1,12 +1,17 @@
 import tkinter as tk
 from tkinter import *
 from tkinter import messagebox
+import random
+
+
+
+
+secretnum = random.randint(0,10000)
 
 def func():
     #get input
     str = enterNumField.get()
     value = int(str)
-    secretnum = 71
 
     if(value==secretnum):
         messagebox.showinfo(title=NONE,message="CONGRATS , YOU GUESSED THE NUM!!!!!")
