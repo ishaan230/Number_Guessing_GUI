@@ -2,7 +2,7 @@
 
 # Number Guessing Game Documentation
 
-The Number Guessing Game is a simple game where the player tries to guess a randomly generated number within the range of 0-10000.
+The Number Guessing Game is a simple game where the player tries to guess a randomly generated number within the range of 0-1000.
 
 ## Requirements
 
@@ -11,7 +11,7 @@ The Number Guessing Game is a simple game where the player tries to guess a rand
 
 ## Game Features
 
-- Generates a random number within a range of 0 - 10000.
+- Generates a random number within a range of 0 - 1000.
 - Provides a graphical user interface (GUI) for player input.
 - Gives feedback on whether the guess is too high, too low, or correct.
 - Displays messages indicating the result and hints.
