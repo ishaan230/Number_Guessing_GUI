@@ -49,6 +49,7 @@ def start():
 
     menu.add_cascade(label='Options', menu=filemenu)
 
+    filemenu.add_command(label='Restart', command=restart)
     filemenu.add_command(label='Exit', command=root.quit)
 
 
