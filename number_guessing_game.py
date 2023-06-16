@@ -41,7 +41,7 @@ def start():
 
     root.title('Guess the Number')
 
-    root.geometry('350x250')
+    root.geometry('600x400')
 
     menu = Menu(root)
 
@@ -65,11 +65,11 @@ def start():
     Submit = Button(root, text = "Submit", fg = "Black", command = func)
 
     #padding
-    enternumber.grid(row = 0 ,column= 2)
+    enternumber.grid(padx=(230,0), pady=(100,0))
 
-    enterNumField.grid(row = 3 , column = 2,padx=100,pady=10)
+    enterNumField.grid(padx=(230,0),pady=(20,0))
 
-    Submit.grid(row = 5, column = 2,pady=5)
+    Submit.grid(padx=(230,0),pady=(20,0))
 
     mainloop()
 def restart():
