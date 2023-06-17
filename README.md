@@ -7,7 +7,13 @@ The Number Guessing Game is a simple game where the player tries to guess a rand
 ## Requirements
 
 - Python 3 or higher
+```
+sudo apt install python3
+```
 - Tkinter library
+```
+sudo apt install python3-tk
+```
 
 ## Game Features
 
