@@ -34,8 +34,7 @@ def start():
     global secretnum
     global root
     
-    # secretnum = random.randint(0,1000)
-    secretnum = 560
+    secretnum = random.randint(0,1000)
 
     #tk config
     root = tk.Tk()
