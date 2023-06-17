@@ -3,27 +3,29 @@ from tkinter import *
 from tkinter import messagebox
 import random
 
-
+attempt = 0
 
 def func():
+    global attempt
     global enterNumField
     #get input
     str = enterNumField.get()
     value = int(str)
-
+    attempt = attempt + 1
     if(value==secretnum):
-        messagebox.showinfo(title=NONE,message="CONGRATS , YOU GUESSED THE NUM!!!!!")
+        messagebox.showinfo(title=NONE,message=f"CONGRATS , YOU GUESSED THE NUMBER IN {attempt} TRYS!!!!!")
         choice = messagebox.askyesno(title='Play Again?',message='Do you want to play again?')
         if(choice):
             restart()
         else:
+            messagebox.showinfo(title=NONE,message=f"THANKS FOR PLAYING,SEE YA!")
             exit()
     elif(value<secretnum):
         # print("Go Higher!!!\n")
-        messagebox.showinfo(title=NONE,message='GO HIGHER!!!')
+        messagebox.showinfo(title=NONE,message=f'GO HIGHER!!!')
         enterNumField.delete(0,END)
     elif(value>secretnum):
-        messagebox.showinfo(title=NONE,message="Go Lower!!!")
+        messagebox.showinfo(title=NONE,message=f"GO LOWER!!!")
         enterNumField.delete(0,END)
 
 
@@ -32,7 +34,8 @@ def start():
     global secretnum
     global root
     
-    secretnum = random.randint(0,1000)
+    # secretnum = random.randint(0,1000)
+    secretnum = 560
 
     #tk config
     root = tk.Tk()
@@ -73,6 +76,8 @@ def start():
 
     mainloop()
 def restart():
+    global attempt
+    attempt = 0
     root.destroy()
     root.quit()
     start()
