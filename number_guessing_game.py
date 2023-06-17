@@ -74,6 +74,7 @@ def start():
     mainloop()
 def restart():
     root.destroy()
+    root.quit()
     start()
 
 start()
